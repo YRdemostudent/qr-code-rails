@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   # Write your routes here. URLs to support:
   
   # /text
+  get("/text", {:controller => "qr_codes", :action => "process_text"})
   # /url
   # /wifi
   # /sms
